@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlogSpace</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+  <!-- NavBar -->
+  <header>
+    <nav>
+      <div class="logo">
+        <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+          <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+        </svg>
+        <h2>BlogSpace</h2>
+      </div>
+      <i class="ri-menu-line menu-icon"></i>
+      <div class="nav-list">
+        <a href="CoderArmy.html">
+          <li>Home</li>
+        </a>
+        <a href="#contact-section">
+          <li>Contact</li>
+        </a>
+        <a href="#aboout-section">
+          <li>About</li>
+        </a>
+        <button class="hero-button">Get Started</button>
+      </div>
+    </nav>
+    <div class="menu-container">
+      <a href="index.html">
+        <li>Home</li>
+      </a>
+      <a href="#contact-section">
+        <li>Contact</li>
+      </a>
+      <a href="#about-section">
+        <li>About</li>
+      </a>
+      <button class="hero-button">Get Started</button>
+    </div>
+  </header>
+
+  <!-- Hero-Section -->
+  <main>
+    <div class="hero-container">
+      <div class="left-container">
+        <h1>
+          Share Your Stories with <br />the
+          <span class="world">World!!</span>
+        </h1>
+        <h3>
+          Create, manage, and share your thoughts with our <br />
+          feature-rich blogging platform.
+        </h3>
+        <button id="createPostBtn">Start Writing</button>
+      </div>
+      <div class="right-container">
+        <img src="./desk.png" alt="" class="hero-image" />
+      </div>
+    </div>
+  </main>
+  <hr />
+  <div class="recent-post">
+    <h2>Recent Posts</h2>
+  </div>
+
+  <!-- Recent Post container -->
+  <section id="recent-post-section">
+    <div class="container">
+      <div class="card-container">
+        <!-- Card going to be posted -->
+        <div class="card">
+          <div class="card-image-container">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Food" class="card-image" />
+          </div>
+          <div class="content">
+            <h3>Food</h3>
+            <h1>Culinary Delights</h1>
+            <p class="description">
+              Food is essential for survival and brings people together, reflecting cultures and traditions. From local
+              cuisines to global flavors, it nourishes, delights, and inspires creativity in every meal.
+            </p>
+            <div class="action">
+              <button class="icon-button like-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                </svg>
+                <span class="like-counter">0</span>
+              </button>
+              <button class="icon-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                </svg>
+              </button>
+              <button class="icon-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+                  <polyline points="16 6 12 2 8 6" />
+                  <line x1="12" y1="2" x2="12" y2="15" />
+                </svg>
+              </button>
+              <button class="icon-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+              </button>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image-container">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40" alt="Economy" class="card-image" />
+          </div>
+          <div class="content">
+            <h3>Economy</h3>
+            <h1>Market Trends</h1>
+            <p class="description">
+              The economy drives growth, shaping societies through trade, production, and consumption. Influenced by
+              markets, policies, and innovation, it balances resources, creates opportunities, and ensures stability for
+              businesses and individuals worldwide.
+            </p>
+            <div class="action">
+              <button class="icon-button like-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                </svg>
+                <span class="like-counter">0</span>
+              </button>
+              <button class="icon-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                </svg>
+              </button>
+              <button class="icon-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+                  <polyline points="16 6 12 2 8 6" />
+                  <line x1="12" y1="2" x2="12" y2="15" />
+                </svg>
+              </button>
+              <button class="icon-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+              </button>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image-container">
+            <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957" alt="Transport" class="card-image" />
+          </div>
+          <div class="content">
+            <h3>Transport</h3>
+            <h1>Urban Mobility</h1>
+            <p class="description">
+              Transportation connects people, goods, and services globally, driving economic growth and accessibility.
+              Innovations like electric vehicles and public transit promote sustainability, while emerging technologies
+              reshape mobility for a more efficient, eco-friendly future.
+            </p>
+            <div class="action">
+              <button class="icon-button like-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                </svg>
+                <span class="like-counter">0</span>
+              </button>
+              <button class="icon-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                </svg>
+              </button>
+              <button class="icon-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+                  <polyline points="16 6 12 2 8 6" />
+                  <line x1="12" y1="2" x2="12" y2="15" />
+                </svg>
+              </button>
+              <button class="icon-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+              </button>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Pop up Container -->
+
+  <section>
+    <div id="postEditor" class="modal hidden">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Write Your Post</h2>
+          <button class="close-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 6 6 18" />
+              <path d="m6 6 12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="form-group">
+          <input type="text" id="postTitle" placeholder="Enter your title" />
+        </div>
+
+        <div class="form-group">
+          <select id="category">
+            <option value="">Select Category</option>
+            <option value="Technology">Technology</option>
+            <option value="Travel">Travel</option>
+            <option value="Food">Food</option>
+            <option value="Lifestyle">Lifestyle</option>
+            <option value="Business">Business</option>
+            <option value="Health">Health</option>
+            <option value="Education">Education</option>
+            <option value="Entertainment">Entertainment</option>
+          </select>
+        </div>
+
+        <!-- Editor container textarea -->
+        <div class="editor-container">
+          <div class="toolbar">
+            <button data-command="bold">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 4h8a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z" />
+                <path d="M6 12h9a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z" />
+              </svg>
+            </button>
+            <button data-command="italic">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" x2="10" y1="4" y2="4" />
+                <line x1="14" x2="5" y1="20" y2="20" />
+                <line x1="15" x2="9" y1="4" y2="20" />
+              </svg>
+            </button>
+            <button data-command="underline">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 3v7a6 6 0 0 0 6 6 6 6 0 0 0 6-6V3" />
+                <line x1="4" x2="20" y1="21" y2="21" />
+              </svg>
+            </button>
+            <button data-command="insertUnorderedList">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="8" x2="21" y1="6" y2="6" />
+                <line x1="8" x2="21" y1="12" y2="12" />
+                <line x1="8" x2="21" y1="18" y2="18" />
+                <line x1="3" x2="3.01" y1="6" y2="6" />
+                <line x1="3" x2="3.01" y1="12" y2="12" />
+                <line x1="3" x2="3.01" y1="18" y2="18" />
+              </svg>
+            </button>
+            <button data-command="heading">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 12h8" />
+                <path d="M4 18V6" />
+                <path d="M12 18V6" />
+                <path d="m17 12 3-2v8" />
+              </svg>
+            </button>
+          </div>
+          <div id="editor" class="editor" contenteditable="true"></div>
+        </div>
+
+        <div class="button-group">
+          <button class="cancel-btn">Cancel</button>
+          <a href="#recent-post-section"><button class="publish-btn">Publish</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Note Take Tool -->
+
+  <section class="note-taking-section">
+    <hr>
+    <div class="note-taking-container">
+      <div class="note-heading">
+        <h1>Daily Writing Goal Tracker</h1>
+        <p>Track, Plan, and Brainstorm Your Writing Journey</p>
+      </div>
+
+      <div class="grid">
+        <!-- Writing Goals Section -->
+        <div class="main-card">
+          <div class="card-header">
+            <i data-lucide="target"></i>
+            <h2>Daily Goal</h2>
+          </div>
+          <div class="goal-input">
+            <input type="number" id="goalInput" placeholder="Set daily word goal" value="500" />
+          </div>
+          <textarea id="writingArea" placeholder="Start writing here..."></textarea>
+          <div class="progress-bar">
+            <span>Progress:</span>
+            <div>
+              <span id="wordCount">0</span>
+              <span>/<span id="goalDisplay">500</span> words</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Calendar Section -->
+        <div class="main-card">
+          <div class="card-header">
+            <i data-lucide="calendar"></i>
+            <h2>Calendar</h2>
+          </div>
+          <div class="event-form">
+            <input type="text" id="eventTitle" placeholder="Event title" />
+            <div class="date-time">
+              <input type="date" id="eventDate" />
+              <input type="time" id="eventTime" />
+            </div>
+            <button id="addEvent">
+              <i data-lucide="plus"></i>
+              Add Event
+            </button>
+          </div>
+          <div id="eventsList" class="events-list"></div>
+        </div>
+      </div>
+
+      <!-- Mind Map Section -->
+      <a href="https://excalidraw.com/" target="_blank" rel="noopener noreferrer" class="mindmap-link">
+        <div class="mindmap-content">
+          <div class="mindmap-header">
+            <div class="header-left">
+              <i data-lucide="brain"></i>
+              <div>
+                <h2>Mind Mapping Tool</h2>
+                <p>Create beautiful mind maps with Excalidraw</p>
+              </div>
+            </div>
+            <div class="header-right">
+              Open Excalidraw
+              <i data-lucide="external-link"></i>
+            </div>
+          </div>
+          <div class="feature-grid">
+            <div class="feature">
+              <i data-lucide="pen-tool"></i>
+              Draw Freely
+            </div>
+            <div class="feature">
+              <i data-lucide="brain"></i>
+              Organize Ideas
+            </div>
+            <div class="feature">
+              <i data-lucide="external-link"></i>
+              Share Easily
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+  <hr style="margin-top: 50px;">
+  <section id="about-section">
+
+    <!-- About -->
+    <div class="min-h-screen bg-gray">
+      <div class="hero">
+        <div class="about-container">
+          <h1>About Our Company</h1>
+          <p>Connecting storytellers worldwide, empowering creativity, and building a vibrant community through the art
+            of blogging.</p>
+        </div>
+      </div>
+
+      <!-- Mission & Vision -->
+      <div class="about-container mission-vision">
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="about-card-header">
+              <i data-lucide="target" class="about-icon"></i>
+              <h2>Our Mission</h2>
+            </div>
+            <p>"To empower every individual to share their stories, ideas, and perspectives with the world. Our platform
+              is built to foster creativity, connect communities, and inspire meaningful conversations through the power
+              of blogging."
+
+            </p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-header">
+              <i data-lucide="award" class="about-icon"></i>
+              <h2>Our Vision</h2>
+            </div>
+            <p>"To create a vibrant global community where diverse voices come together to inform, inspire, and
+              innovate. We envision a world where every story finds its audience and every creator finds their
+              platform."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us -->
+  <section class="contact-section" id="contact-section">
+    <div class="contact-container">
+      <div class="header">
+        <h1>Contact Us</h1>
+        <p>You can also connect with us through our social media channels. We are active and available to assist you!
+        </p>
+      </div>
+      <div class="form-container">
+        <div class="form-group">
+          <div class="input-container">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
+          </div>
+          <div class="input-container">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+          </div>
+        </div>
+        <div class="input-container full-width">
+          <label for="message">Message</label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+        <div class="button-container">
+          <button>Submit</button>
+        </div>
+        <div class="contact-info">
+          <a href="#">rajharsh070709@gmail.com</a>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/share/18g2W8uSHf/" class="social-icon">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon"
+                viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a href="" class="social-icon">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon"
+                viewBox="0 0 24 24">
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                </path>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/its_sanju_7733?igsh=MXRxN3ZvZmVnaXk4dg==" class="social-icon">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="icon" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/harshraj-gupta-39995b274/" class="social-icon">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="0" class="icon" viewBox="0 0 24 24">
+                <path stroke="none"
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <a href="#" class="brand">
+        <div class="logo-footer">
+          <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+          </svg>
+          <h2>BlogSpace</h2>
+        </div>
+        <p class="footer-text">
+          © 2025 BlogSpace
+          <a href="#" class="footer-link" rel="noopener noreferrer" target="_blank">@BlogSpace</a>
+        </p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/18g2W8uSHf/" class="social-icon">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon"
+              viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a href="" class="social-icon">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon"
+              viewBox="0 0 24 24">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+              </path>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/its_sanju_7733?igsh=MXRxN3ZvZmVnaXk4dg==" class="social-icon">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="icon" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/harshraj-gupta-39995b274/" class="social-icon">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="0" class="icon" viewBox="0 0 24 24">
+              <path stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
