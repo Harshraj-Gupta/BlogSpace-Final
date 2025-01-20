@@ -190,7 +190,6 @@ function clearModalFields() {
 
 // Menu Functionality
 const menuicon = document.querySelector(".menu-icon");
-const crossicon = document.querySelector("#cross-icon");
 
 const menucontainer = document.querySelector(".menu-container");
 menuicon.addEventListener("click", () => {
@@ -200,7 +199,8 @@ menuicon.addEventListener("click", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   const createPostBtn = document.getElementById("createPostBtn");
-  const heroButton = document.querySelector(".hero-button");
+  const heroButton = document.getElementById("hero-button");
+  const menuButton = document.getElementById('hero-button2');
   const modal = document.getElementById("postEditor");
   const closeBtn = modal.querySelector(".close-btn");
   const cancelBtn = modal.querySelector(".cancel-btn");
@@ -212,7 +212,14 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   heroButton.addEventListener("click", () => {
     modal.classList.remove("hidden");
+    console.log("hi");
   });
+    menuButton.addEventListener("click", () => {
+    modal.classList.remove("hidden");
+    console.log("hi");
+  });
+
+
 
   // Hide modal
   const hideModal = () => {
@@ -333,7 +340,6 @@ function reload() {
       likes++;
       const likeCounter = button.querySelector(".like-counter"); // Find the counter inside the button
       likeCounter.textContent = likes; // Update the counter for the specific button
-      console.log("hi");
     });
   });
 }
